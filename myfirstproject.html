@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link href='profilepic.jfif' rel='shortcut icon'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        *{
+        font-family: 'Montserrat', sans-serif;
+        margin: 0%;
+        }
+        body{
+            width: 1263px;
+            margin-bottom: 10%;
+        }
+
+        /* menu */   
+        nav{
+            background-color: #E5E5E5;
+        }     
+
+        td.menu{
+            width: 100px;
+            height: 40px;
+            text-align: center;
+        }
+        a.menu:link {
+        color:black;
+        background-color: transparent;
+        text-decoration: none;
+        }
+        a.menu:hover {
+        font-weight: bold;
+        background-color: transparent;
+        }
+
+        a.menu:active {
+        font-weight: bold;
+        background-color: transparent;
+        }
+
+        a.menu:visited {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+        }
+
+        /* comment */
+        label{
+            font-size: 12px;
+            font-weight: bold;
+        }
+        textarea{
+            width: 250px;
+            height: 150px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 1px solid #E5E5E5;
+        }
+        input[type=text]{
+            width: 250px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 1px solid #E5E5E5;
+        }
+        div.comment{
+            width: 250px;
+            margin-left: 40%;
+            font-weight: bold;
+        }
+        input[type=submit]{
+            margin-left: 72%;
+            width: 166px;
+            height: 54px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+        }   
+
+        input[type=submit]:hover{
+            background-color: gray;
+            margin-left: 72%;
+            width: 166px;
+            height: 54px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <table class="menu" style="width: 100%;" >
+            <tr class="menu">
+                <td class="menu" style="font-weight: bold;">
+                    <a href="home.html" target="iframe_utama" class="menu">Home</a>
+                </td>
+                <td class="menu">
+                    <a href="galeri.html" target="iframe_utama" class="menu">My Gallery</a>
+                </td>
+                <td class="menu">
+                    <a href="https://en.wikipedia.org/wiki/Kento_Yamazaki" target="iframe_utama" class="menu">Me on Wikipedia</a>
+                </td>
+            </tr>
+        </table>
+    </nav>
+
+    <iframe name="iframe_utama" style="border:none;" height="700px" width="100%"></iframe>
+    <br><br><br><br>
+    
+    <div class="comment">
+        <p style="font-size: 24;">LEAVE A COMMENT</p> 
+        <br>
+        <label for="comment">Comment</label><br>
+        <textarea name="comment" id="comment"></textarea>
+        <br>
+        
+        <label>Name</label><br>
+        <input type="text" name="Nama" id="Name">
+        <br>
+
+        <label for="website">Website</label><br>
+        <input type="text" name="website" id="website">
+        <br><br>
+
+        <input type="checkbox" id="option1">
+        <label for="option1">Notify me of new comments via email</label>
+        <br>
+
+        <input type="checkbox" id="option2">
+        <label for="option1">Notify me of new posts via email</label>
+        <br><br>
+        <table>
+            <tr>
+                <td class="submit">
+                    <input type="submit" value="Post Comment">
+                </td>
+            </tr>
+        </table>
+    </div>   
+</body>
+</html>
