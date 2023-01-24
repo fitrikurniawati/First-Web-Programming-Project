@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>galeri</title>
+        <link href='profilepic.jfif' rel='shortcut icon'>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style> 
+        *{
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        div.isi{
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        table,tr,td{
+            border: 1px solid white;
+        }
+
+        /* menu */
+        .menu{
+            border: 1px solid black;
+        }
+
+        td.menu{
+            width: 100px;
+            height: 40px;
+        }
+
+        /* css tabel info profile */
+        .profile{
+            margin-top: 10%;
+            margin-left: 40%;
+            margin-right: 40%;
+            text-align: center;
+            line-height: 30%;
+        }
+
+        /* css tabel info akun */
+        table.infoacc{
+            margin-left: 30%;
+            border-spacing: 20px;
+        }
+        td.infoacc{
+            width: 100px;
+            height: 67px;
+            background-color:#E5E5E5;
+            border-radius: 12px;
+        }
+        div.infoacc{
+            line-height: 30%;
+        }
+
+        /* css tabel galeri foto */
+        table.galeri{
+            border-spacing: 10px;
+        }
+        img{
+            border-radius: 12px;
+        }
+
+        td{
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="isi">
+        <!-- tabel profil -->
+        <div class="profile">
+            <table>
+                <tr>
+                    <td><img src="profilepic.jfif" width="160px" height="160px"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><b>Kento Yamazaki</b></p>
+                        <p style="color:gray">Tokyo, Japan</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+            <br>
+
+
+        <!-- table info akun-->
+            <table class="infoacc">
+                <tr>
+                    <td class="infoacc" >
+                        <div class="infoacc">
+                            <p><b>6</b></p>
+                            <p style="color:gray">posts</p>
+                        </div>
+                    </td>
+                    <td class="infoacc">
+                        <div class="infoacc">
+                            <p><b>410</b></p>
+                            <p style="color:gray">followers</p>
+                        </div>
+                    </td>
+                    <td class="infoacc">
+                        <div class="infoacc">
+                            <p><b>69</b></p>
+                            <p style="color:gray">following</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+
+        <!-- tabel galeri -->
+        <div class="galeri">
+            <table class="galeri" style="width: 80%;">
+                <tr>
+                    <td><img src="image/photo1.png" width="320" height="320"></td>
+                    <td colspan="2"><img src="image/photo2.png" width="640" height="320"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><img src="image/photo3.png" width="640" height="320" border-radius="12px"></td>
+                    <td rowspan="3"><img src="image/photo4.png" width="320" height="640" ></td>
+                </tr>
+
+                <tr>
+                    <td><img src="image/photo5.png" width="320" height="320"></td>
+                    <td><img src="image/photo6.png" width="320" height="320"></td>
+                </tr>
+
+            </table>
+        </div>
+        <br>
+        <br>
+
+        <footer style="text-align: center; color: gray;">
+            <p>Fitri Kurniawati @ Devchallenges.io</p>
+        </footer>
+    </div>
+</body>
+</html>
